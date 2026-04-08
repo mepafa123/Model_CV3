@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color:#fff;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5%;
+}
+.cabecera{
+    text-align: center;
+}
+.cabecera h1, h2{
+    font-weight: normal;
+    line-height: 1;
+}
+.cabecera h2{
+    margin-top: 5px;
+    opacity: 0.5;
+}
+h1{
+    font-size: 4em;
+}
+h2{
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.5em;
+    margin-bottom: 1%;
+}
+h4{
+    margin-bottom: 5%;
+}
+
+.caracteristicas_generales i{
+    font-size: 0.8em;
+    color: #5106e8;
+    background: #fff;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em;
+}
+.experiencia_formación i{
+    font-size: 0.8em;
+    color: #fff;
+    background: #5106e8;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em;
+}
+.contenedor {
+    background-color: #1F253D;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cabecera{
+    position: relative;
+}
+.cabecera::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fondo_cabecera_cv.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+.foto_perfil {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    border: 7px solid #5106e8;
+    margin: 5%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.foto_perfil img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.nombre_puesto {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1%;
+    text-shadow:0px 0px 20px rgba(0, 0, 0, 0.5) ;
+}
+.contenido_cv {
+    display: flex;
+    width: 100%;
+}
+.caracteristicas_generales {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #5106e8;
+    padding: 5%;
+    width: 40%;
+}
+.caracteristicas_generales ul {
+    margin-left: 5%;
+}
+.carta_presentación {
+    text-align: justify;
+}
+.grafico {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1%;
+}
+.donut-hole {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background-color: #5106e8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+.sector {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    transform-origin: left;
+}
+#sector1 {
+    transform: rotate(0deg);
+    background-color: #f91c8a;
+}
+#sector2 {
+    transform: rotate(120deg);
+    background-color: #2d0b7c;
+}
+#sector3 {
+    transform: rotate(240deg);
+    background-color: #58d1bc;
+}
+.habilidades {
+    display: inline-block;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+.experiencia_formación {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    width: 60%;
+}
+.experiencia_formación h3 {
+    text-align: right;
+}
+.nombre_empresa {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+.nombre_institucion_educativa {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+.año_puesto {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 49%;
+}
+.descripcion_del_puesto {
+    margin-top: 3%;
+    text-align: justify;
+}
+@media only screen and (min-width: 296px) and (max-width: 1280px) {
+    .contenedor {
+        width: 100%;
+        height: auto;
+        font-size: 10px;
+    }
+    .año_puesto {
+        text-align: right;
+    }
+        
+}
+/* Para Tablets (menos de 992px) */
+@media screen and (max-width: 1280px) {
+    h1 { 
+        font-size: 30px; }
+    .foto_perfil {
+        width: 200px;
+        height: 200px;
+    }
+    .año_puesto {
+        text-align: right;
+        display: inline-block;
+    }
+}
+@media (max-width: 525px) {
+    .nombre_puesto{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 295px) {
+    h2 {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 10px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    .nombre_empresa, .año_puesto {
+        font-size: 8px;
+    }
+    .habilidades {
+        font-size: 12px;
+    }
+    span {
+        font-size: 12px;
+    }
+    li {
+        font-size: 12px;
+    }
+}
+@media (max-width: 250px){
+        .foto_perfil {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 250px){
+    .habilidades {
+        font-size: 10px;
+    }
+    span {
+        font-size: 10px;
+    }
+    li {
+        font-size: 10px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+
+}
